@@ -1,12 +1,16 @@
 #include "SmileyState.h"
 #include "SquaresState.h"
 
+#define BUTTON_PIN 9
+
 LedControl* lc;
 State* currentState;
 
 void nextState();
 
 void setup() {
+	pinMode(BUTTON_PIN, INPUT_PULLUP);
+
 	lc = new LedControl(12,10,11,1);
 	currentState = new SquaresState();
 
@@ -19,7 +23,9 @@ void loop() {
 
 	currentState->drawOnScreen(lc);
 
-	nextState();
+	if (digitalRead(BUTTON_PIN) == LOW) {
+		nextState();
+	}
 }
 
 void nextState() {
