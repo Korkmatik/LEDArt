@@ -1,18 +1,19 @@
-
-
 #include "SmileyState.h"
+#include "SquaresState.h"
 
-LedControl* lc= new LedControl(12,10,11,1);
+LedControl* lc;
+State* currentState;
 
 void nextState();
 
 void setup() {
-	  lc->shutdown(0,false);
-	  lc->setIntensity(0,8);
-	  lc->clearDisplay(0);
-}
+	lc = new LedControl(12,10,11,1);
+	currentState = new SquaresState();
 
-State* currentState = new SmileyState();
+	lc->shutdown(0,false);
+	lc->setIntensity(0,8);
+	lc->clearDisplay(0);
+}
 
 void loop() {
 
