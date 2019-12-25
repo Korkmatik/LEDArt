@@ -75,6 +75,6 @@ void SquaresState::drawOnScreen(LedControl *lc) {
 		for (int j = 0; j < 8; j++) {
 			lc->setRow(0, j, frames[i][j]);
 		}
-		delay(300);
+		delay(200);
 	}
 }
