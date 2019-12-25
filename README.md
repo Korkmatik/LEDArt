@@ -3,9 +3,9 @@ This is a Arduino Project which displays animations on a 8x8 LED Matrix. You can
 
 <img src="res/all.jpg" alt="Picture of all components" width="50%"/>
 
-**Board**: Mega 2560 R3
-**Led Matrix**: MAX7219
-**Library-Version**: 1.0.6
+**Board**: Mega 2560 R3 <br>
+**Led Matrix**: MAX7219 <br>
+**Library-Version**: 1.0.6 <br>
 
 # Connections
 ## LED Matrix
