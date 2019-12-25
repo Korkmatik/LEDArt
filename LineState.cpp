@@ -9,7 +9,7 @@
 #include "SmileyState.h"
 
 LineState::LineState() {
-	delayTime = 300;
+	delayTime = 100;
 	line = B11111111;
 }
 
@@ -29,7 +29,7 @@ void LineState::drawOnScreen(LedControl *lc) {
 		delay(delayTime);
 	}
 
-	for (i = 7; i >= 0; i--) {
+	for (i = 6; i >= 0; i--) {
 		lc->clearDisplay(0);
 		lc->setRow(0, i, line);
 		delay(delayTime);
