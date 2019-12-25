@@ -6,6 +6,7 @@
  */
 
 #include "SmileyState.h"
+#include "SquaresState.h"
 
 SmileyState::SmileyState() {
 	smileyTopSize = 4;
@@ -71,5 +72,5 @@ void SmileyState::drawOnScreen(LedControl *lc) {
 }
 
 State* SmileyState::next() {
-	return this;
+	return new SquaresState();
 }
