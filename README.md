@@ -3,7 +3,7 @@ This is a Arduino Project which displays animations on a 8x8 LED Matrix. The ani
 
 <img src="res/all.jpg" alt="Picture of all components" width="50%"/>
 
-**Board**: Mega 2560 R3 <br>
+**Processor**: Mega 2560 R3 <br>
 **Led Matrix**: MAX7219 <br>
 **Library-Version**: 1.0.6 <br>
 
