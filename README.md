@@ -1,10 +1,6 @@
 # LedArt
 This is a Arduino Project which displays animations on a 8x8 LED Matrix. The animations can be switched by presssing a button.
 
-Click the following link, to watch a demo of the project on YouTube:
-
-[![Youtube Video](https://img.youtube.com/vi/Qu7PtnmqWUc/0.jpg)](https://www.youtube.com/watch?v=Qu7PtnmqWUc)
-
 # Hardware
 **Processor**: Mega 2560 R3 <br>
 **Led Matrix**: MAX7219 <br>
